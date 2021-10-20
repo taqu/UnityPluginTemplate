@@ -1,0 +1,13 @@
+#pragma once
+#ifndef INC_PLUGIN00_H_
+#define INC_PLUGIN00_H_
+#include <cstdint>
+
+#define STDCALL
+#define DLLEXPORT __declspec(dllexport)
+
+extern "C"
+{
+    DLLEXPORT int32_t STDCALL get_value();
+}
+#endif //INC_PLUGIN00_H_
